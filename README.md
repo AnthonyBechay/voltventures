@@ -19,8 +19,8 @@ A modern, futuristic website for VoltVentures, a Lebanese electrical services co
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ installed
-- npm, yarn, pnpm, or bun
+- Node.js 20+ installed
+- pnpm (recommended) - Install via `npm install -g pnpm` or `corepack enable`
 
 ### Installation
 
@@ -31,19 +31,11 @@ cd voltventures
 
 2. Install dependencies:
 ```bash
-npm install
-# or
-yarn install
-# or
 pnpm install
 ```
 
 3. Run the development server:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
 ```
 
@@ -53,8 +45,9 @@ pnpm dev
 
 - **Next.js 16** - React framework with App Router
 - **TypeScript** - Type-safe development
-- **Tailwind CSS 4** - Utility-first CSS framework
+- **Tailwind CSS 3.4** - Utility-first CSS framework
 - **React 19** - UI library
+- **pnpm** - Fast package manager
 
 ## 📁 Project Structure
 
@@ -93,13 +86,13 @@ The website is fully optimized for mobile devices with:
 ### Build for Production
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Start Production Server
 
 ```bash
-npm start
+pnpm start
 ```
 
 ### Deploy to Vercel

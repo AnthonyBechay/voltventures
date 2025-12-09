@@ -23,7 +23,7 @@
   - Hooks for state management
 
 ### Styling
-- **Tailwind CSS 4** - Utility-first CSS framework
+- **Tailwind CSS 3.4** - Utility-first CSS framework
   - Responsive design utilities
   - Custom animations
   - Dark mode support
@@ -31,7 +31,7 @@
 
 ### Build Tools
 - **Node.js 20** - JavaScript runtime
-- **npm** - Package manager
+- **pnpm 9.15.0** - Fast, disk space efficient package manager
 - **ESLint** - Code linting
 
 ## Deployment Stack
@@ -86,21 +86,22 @@ voltventures/
 - `@types/node@^20` - Node.js type definitions
 - `@types/react@^19` - React type definitions
 - `@types/react-dom@^19` - React DOM type definitions
-- `tailwindcss@^4` - Tailwind CSS
-- `@tailwindcss/postcss@^4` - Tailwind PostCSS plugin
+- `tailwindcss@^3.4.17` - Tailwind CSS
+- `postcss@^8.4.47` - PostCSS processor
+- `autoprefixer@^10.4.20` - CSS vendor prefixer
 - `eslint@^9` - ESLint
 - `eslint-config-next@16.0.8` - Next.js ESLint config
 
 ## Build Process
 
-1. **Install Dependencies**: `npm ci`
+1. **Install Dependencies**: `pnpm install --frozen-lockfile`
 2. **Type Check**: TypeScript compilation
-3. **Build**: `npm run build`
+3. **Build**: `pnpm run build`
    - Compiles TypeScript
    - Optimizes images
    - Generates static pages
    - Creates standalone output for Docker
-4. **Start**: `npm start` (production server)
+4. **Start**: `pnpm start` (production server)
 
 ## Runtime
 
